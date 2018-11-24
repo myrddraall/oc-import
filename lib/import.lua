@@ -46,7 +46,7 @@ local Import = {};
 function Import.__load(module)
   if module:sub(1, 1) == "." then
     local fs = require("filesystem")
-    local lvl = 2;
+    local lvl = 1;
     local found = nil;
 
     while not found do
