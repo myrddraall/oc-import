@@ -7,7 +7,8 @@ if args[1] then
 end
 if installDir ~= "" then
     local fs = require("filesystem");
-    fs.makeDirectory(installDir);
+    fs.makeDirectory(installDir .. '/usr/lib');
+    fs.makeDirectory(installDir .. '/boot');
 end
 
 shell.execute('rm ' .. installDir .. '/usr/lib/import.lua');
