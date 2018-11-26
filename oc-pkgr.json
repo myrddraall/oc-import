@@ -1,6 +1,10 @@
 {
     "name": "oc-import",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "githubrepo": "myrddraall/oc-import",
-    "description": ""
+    "description": "",
+    "install": {
+        "lib/": "lib/*",
+        "/boot/": "boot/*"
+    }
 }
